@@ -46,7 +46,7 @@ const DeviceModalListItem: FC<DeviceModalListItemProps> = props => {
         />
         <View style={{width: wp('65%')}}>
           <Text style={styles.ctaButtonText} numberOfLines={1}>
-            {item.item.name}
+            {item.item.name ?? 'Device'}
           </Text>
         </View>
       </View>

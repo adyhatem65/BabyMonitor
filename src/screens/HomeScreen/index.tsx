@@ -17,9 +17,10 @@ const HomeScreen = () => {
     connectToDevice,
     connectedDevice,
     heartRate,
-    babyTemprature,
-    roomTemprature,
+    babyTemperature,
+    roomTemperature,
     humidity,
+    babyCryStatus,
     // disconnectFromDevice,
   } = useBLE();
   // TTS
@@ -31,11 +32,11 @@ const HomeScreen = () => {
     initializeTtsListeners();
 
     if (connectedDevice) {
-      playAlert(heartRate, babyTemprature);
+      playAlert(heartRate, babyTemperature, babyCryStatus);
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [heartRate, babyTemprature, connectedDevice]);
+  }, [heartRate, babyTemperature, connectedDevice]);
 
   const scanForDevices = async () => {
     const isPermissionsEnabled = await requestPermissions();
@@ -98,7 +99,7 @@ const HomeScreen = () => {
                 />
               }
               image={IMAGES.temprature}
-              value={babyTemprature}
+              value={babyTemperature}
             />
           </View>
           <View style={styles.cardsRowStyle}>
@@ -113,7 +114,7 @@ const HomeScreen = () => {
                 />
               }
               image={IMAGES.temprature}
-              value={roomTemprature}
+              value={roomTemperature}
             />
             <Card
               type="humidity"

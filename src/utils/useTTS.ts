@@ -3,7 +3,11 @@ import Tts, {Options} from 'react-native-tts';
 interface ttsProps {
   initializeTtsListeners(): Promise<void>;
   playTTS: (message: string, options?: Options) => Promise<void>;
-  playAlert: (heartRate: number, babyTemperature: number) => Promise<void>;
+  playAlert: (
+    heartRate: number,
+    babyTemperature: number,
+    babyCryStatus: string | null,
+  ) => Promise<void>;
 }
 
 export default function useTTS(): ttsProps {
@@ -43,24 +47,24 @@ export default function useTTS(): ttsProps {
     // Set up listeners for various TTS events
 
     // Listener for when TTS starts speaking
-    Tts.addEventListener('tts-start', event => {
-      // console.log('TTS Started: ', event);
-    });
+    // Tts.addEventListener('tts-start', event => {
+    //   // console.log('TTS Started: ', event);
+    // });
 
     // Listener for TTS progress (triggered repeatedly while speaking)
-    Tts.addEventListener('tts-progress', event => {
-      // console.log('TTS progress: ', event); // Uncomment to log progress events
-    });
+    // Tts.addEventListener('tts-progress', event => {
+    //   // console.log('TTS progress: ', event); // Uncomment to log progress events
+    // });
 
     // Listener for when TTS finishes speaking
-    Tts.addEventListener('tts-finish', event => {
-      // console.log('TTS finished: ', event);
-    });
+    // Tts.addEventListener('tts-finish', event => {
+    //   // console.log('TTS finished: ', event);
+    // });
 
     // Listener for when TTS is canceled
-    Tts.addEventListener('tts-cancel', event => {
-      // console.log('TTS Cancel: ', event);
-    });
+    // Tts.addEventListener('tts-cancel', event => {
+    //   // console.log('TTS Cancel: ', event);
+    // });
   };
 
   // Function to play a message using TTS
@@ -84,14 +88,26 @@ export default function useTTS(): ttsProps {
   };
 
   // function to play different sounds based on heart rate and baby temperature
-  const playAlert = async (heartRate: number, babyTemperature: number) => {
-    if (heartRate === 0) {
+  const playAlert = async (
+    heartRate: number,
+    babyTemperature: number,
+    babyCryStatus: string | null,
+  ) => {
+    if (heartRate < 90 && heartRate !== 0) {
       await playTTS('احترس معدل ضربات قلب طفلك منخفضة');
       await playTTS("Please be careful, your child's heart rate is low");
     }
-    if (babyTemperature === 0) {
-      await playTTS('احترس درجة حرارة طفلك منخفضة');
-      await playTTS("Please be careful, your child's temperature is low");
+    if (heartRate > 150) {
+      await playTTS('احترس معدل ضربات قلب طفلك مرتفعة');
+      await playTTS("Please be careful, your child's heart rate is high");
+    }
+    if (babyTemperature >= 38) {
+      await playTTS('احترس درجة حرارة طفلك مرتفعة');
+      await playTTS("Please be careful, your child's temperature is high");
+    }
+    if (babyCryStatus) {
+      await playTTS('احترس طفلك جائع');
+      await playTTS('Please be careful, Your child is hungry');
     }
   };
 

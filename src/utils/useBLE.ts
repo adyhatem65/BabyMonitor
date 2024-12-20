@@ -27,7 +27,13 @@ interface BluetoothLowEnergyApi {
 }
 
 type dataType = {
-  status: string;
+  prediction:
+    | 'belly_pain'
+    | 'burping'
+    | 'discomfort'
+    | 'hungry'
+    | 'noise'
+    | 'tired';
   sensors: {
     room_temperature: number;
     humidity: number;
@@ -171,7 +177,7 @@ function useBLE(): BluetoothLowEnergyApi {
     // }
 
     const defaultData = {
-      status: 'hungry',
+      prediction: 'hungry',
       sensors: {
         room_temperature: 0,
         humidity: 0,
@@ -183,12 +189,13 @@ function useBLE(): BluetoothLowEnergyApi {
     const data: dataType = characteristic.value
       ? JSON.parse(characteristic.value)
       : defaultData;
+    console.log('data   ============    ', data);
 
     setHeartRate(data.sensors.heart_rate);
     setHumidity(data.sensors.humidity);
     setRoomTemperature(data.sensors.room_temperature);
     setBabyTemperature(data.sensors.child_temperature);
-    setBabyCryStatus(data.status);
+    setBabyCryStatus(data.prediction);
   };
 
   const startStreamingData = async (device: Device) => {
