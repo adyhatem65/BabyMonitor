@@ -14,6 +14,15 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-BabyMonitor-BabyMonitorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-BabyMonitor-BabyMonitorTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		62D41AFC26BF4E7EBAA3D4BF /* GraphikArabic-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8981DB1E348948649C9D45C0 /* GraphikArabic-Black.otf */; };
+		6A4A97D49C924BAEB4A949D0 /* GraphikArabic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBBD25390BF641D095384737 /* GraphikArabic-Bold.otf */; };
+		51833872623A45E6B2B89BA2 /* GraphikArabic-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53DB0E275B0247C19F8FE196 /* GraphikArabic-ExtraLight.otf */; };
+		03B9A7F308B84FCA9A089C27 /* GraphikArabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE966250D11B4E1380FD2E12 /* GraphikArabic-Light.otf */; };
+		5EC97F2B46B047AFA84B6832 /* GraphikArabic-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12DC74A62F45455B8420CBE9 /* GraphikArabic-Medium.otf */; };
+		A1971A613AB04405AD7EEA9E /* GraphikArabic-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7621BC9AC53489DB288C295 /* GraphikArabic-SemiBold.otf */; };
+		A6CF0EC61E89468F93709046 /* GraphikArabic-Super.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B05316E451445EE85D060A7 /* GraphikArabic-Super.otf */; };
+		C99D3DD43F594FFFBF087D73 /* GraphikArabic-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD210DFD57834A9290C258F8 /* GraphikArabic-Thin.otf */; };
+		03E394D2435B46C28237FD15 /* GraphikArabic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C39C11F924494B968380D5F6 /* GraphikArabic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BabyMonitor/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-BabyMonitor-BabyMonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyMonitor-BabyMonitorTests.release.xcconfig"; path = "Target Support Files/Pods-BabyMonitor-BabyMonitorTests/Pods-BabyMonitor-BabyMonitorTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		8981DB1E348948649C9D45C0 /* GraphikArabic-Black.otf */ = {isa = PBXFileReference; name = "GraphikArabic-Black.otf"; path = "../src/assets/fonts/GraphikArabic-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FBBD25390BF641D095384737 /* GraphikArabic-Bold.otf */ = {isa = PBXFileReference; name = "GraphikArabic-Bold.otf"; path = "../src/assets/fonts/GraphikArabic-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		53DB0E275B0247C19F8FE196 /* GraphikArabic-ExtraLight.otf */ = {isa = PBXFileReference; name = "GraphikArabic-ExtraLight.otf"; path = "../src/assets/fonts/GraphikArabic-ExtraLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CE966250D11B4E1380FD2E12 /* GraphikArabic-Light.otf */ = {isa = PBXFileReference; name = "GraphikArabic-Light.otf"; path = "../src/assets/fonts/GraphikArabic-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		12DC74A62F45455B8420CBE9 /* GraphikArabic-Medium.otf */ = {isa = PBXFileReference; name = "GraphikArabic-Medium.otf"; path = "../src/assets/fonts/GraphikArabic-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F7621BC9AC53489DB288C295 /* GraphikArabic-SemiBold.otf */ = {isa = PBXFileReference; name = "GraphikArabic-SemiBold.otf"; path = "../src/assets/fonts/GraphikArabic-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7B05316E451445EE85D060A7 /* GraphikArabic-Super.otf */ = {isa = PBXFileReference; name = "GraphikArabic-Super.otf"; path = "../src/assets/fonts/GraphikArabic-Super.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AD210DFD57834A9290C258F8 /* GraphikArabic-Thin.otf */ = {isa = PBXFileReference; name = "GraphikArabic-Thin.otf"; path = "../src/assets/fonts/GraphikArabic-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C39C11F924494B968380D5F6 /* GraphikArabic.otf */ = {isa = PBXFileReference; name = "GraphikArabic.otf"; path = "../src/assets/fonts/GraphikArabic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				64F17A73100B4F61B80FEF17 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +168,23 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		64F17A73100B4F61B80FEF17 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				8981DB1E348948649C9D45C0 /* GraphikArabic-Black.otf */,
+				FBBD25390BF641D095384737 /* GraphikArabic-Bold.otf */,
+				53DB0E275B0247C19F8FE196 /* GraphikArabic-ExtraLight.otf */,
+				CE966250D11B4E1380FD2E12 /* GraphikArabic-Light.otf */,
+				12DC74A62F45455B8420CBE9 /* GraphikArabic-Medium.otf */,
+				F7621BC9AC53489DB288C295 /* GraphikArabic-SemiBold.otf */,
+				7B05316E451445EE85D060A7 /* GraphikArabic-Super.otf */,
+				AD210DFD57834A9290C258F8 /* GraphikArabic-Thin.otf */,
+				C39C11F924494B968380D5F6 /* GraphikArabic.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +281,15 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				62D41AFC26BF4E7EBAA3D4BF /* GraphikArabic-Black.otf in Resources */,
+				6A4A97D49C924BAEB4A949D0 /* GraphikArabic-Bold.otf in Resources */,
+				51833872623A45E6B2B89BA2 /* GraphikArabic-ExtraLight.otf in Resources */,
+				03B9A7F308B84FCA9A089C27 /* GraphikArabic-Light.otf in Resources */,
+				5EC97F2B46B047AFA84B6832 /* GraphikArabic-Medium.otf in Resources */,
+				A1971A613AB04405AD7EEA9E /* GraphikArabic-SemiBold.otf in Resources */,
+				A6CF0EC61E89468F93709046 /* GraphikArabic-Super.otf in Resources */,
+				C99D3DD43F594FFFBF087D73 /* GraphikArabic-Thin.otf in Resources */,
+				03E394D2435B46C28237FD15 /* GraphikArabic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

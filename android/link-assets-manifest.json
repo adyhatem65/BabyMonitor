@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/GraphikArabic-Black.otf",
+      "sha1": "c92962fb2aa8b30751fdc8f529d99c1ba2a31f2a"
+    },
+    {
+      "path": "src/assets/fonts/GraphikArabic-Bold.otf",
+      "sha1": "48fc475b2ed0e16f49940e5792355c463cd0d532"
+    },
+    {
+      "path": "src/assets/fonts/GraphikArabic-ExtraLight.otf",
+      "sha1": "5a138d45639ecc519f3284b4dd87f839e39bebbe"
+    },
+    {
+      "path": "src/assets/fonts/GraphikArabic-Light.otf",
+      "sha1": "3c5e5cc78a2283ebd77f3d568a6d8fb5f011d2fa"
+    },
+    {
+      "path": "src/assets/fonts/GraphikArabic-Medium.otf",
+      "sha1": "11841984f30e8ea30c4ca35a7d2d1d8ffa27af95"
+    },
+    {
+      "path": "src/assets/fonts/GraphikArabic-SemiBold.otf",
+      "sha1": "f5d1de37315184a87ed72c56953885c49676882a"
+    },
+    {
+      "path": "src/assets/fonts/GraphikArabic-Super.otf",
+      "sha1": "af6ff8e0904bb8815f4bee00a996f30a1831a7dd"
+    },
+    {
+      "path": "src/assets/fonts/GraphikArabic-Thin.otf",
+      "sha1": "1f15e61b9ea8b752237e0714582b32b950a3989f"
+    },
+    {
+      "path": "src/assets/fonts/GraphikArabic.otf",
+      "sha1": "b3347272cde3ff0348aa02e49d4c51ddfc705a66"
+    }
+  ]
+}
